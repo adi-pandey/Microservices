@@ -30,5 +30,10 @@ public class UserController {
 //		return this.userService.getUs-er(userId);
 		return user;
 	}
+	@GetMapping
+	public List<User> getAllUser() {
+		List<User> user = this.userService.getAllUser();
+		return user;
+	}
 	
 }
