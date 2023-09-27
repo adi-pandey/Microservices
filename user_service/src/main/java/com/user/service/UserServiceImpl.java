@@ -19,6 +19,12 @@ public class UserServiceImpl implements UserService{
 		// TODO Auto-generated method stub
 		return this.list.stream().filter(user -> user.getUserId().equals(id)).findAny().orElse(null);
 	}
+
+	@Override
+	public List<User> getAllUser() {
+		// TODO Auto-generated method stub
+		return list;
+	}
 	
 	
 }
