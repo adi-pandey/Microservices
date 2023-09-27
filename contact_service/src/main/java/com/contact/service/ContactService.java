@@ -7,4 +7,5 @@ import com.contact.entity.Contact;
 public interface ContactService {
 
 	public List<Contact> getContactofUser(Long userId);
+	public List<Contact> getAllContact();
 }

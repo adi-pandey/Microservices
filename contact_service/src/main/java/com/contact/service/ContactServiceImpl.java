@@ -21,5 +21,10 @@ public class ContactServiceImpl implements ContactService {
 		return list.stream().filter(contact -> contact.getUserId().equals(userId)).collect(Collectors.toList());
 	}
 
+	@Override
+	public List<Contact> getAllContact() {
+		return list;
+	}
+
 	
 }
